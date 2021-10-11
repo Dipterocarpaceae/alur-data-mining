@@ -1,0 +1,52 @@
+-load library
+-Panggil data
+-Head
+-Ganti nama kolom (jika diperlukan)
+-Sesuaikan atribut target (misal ubah menjadi class biner, 0 dan 1)
+-Cek missing data
+-Hapus atribut yang tidak perlukan
+-Masukkan dataset yang sudah bersih ke dalam data.frame
+-Statistik deskriptif
+-CEK KE-IMBALANCE-AN DATA
+	Jika ada, bisa kita biarkan apa adanya,
+		DENGAN SYARAT SAAT KITA MELAKUKAN EVALUASI MODEL,
+		HARUS DIPERHATIKAN MATRIX2 EVALUASI YANG STANDAR SEPERTI
+		AKURASI, PRESISI, RECALL TIDAK CUKUP LAGI SEHINGGA DIPERLUKAN
+		AKURASI TERTIMBANG DALAM BENTUK F1 SCORE ATAU KAPPA STATISTIK
+		SUPAYA BISA MEREPRESENTASIKAN DENGAN BAIK ADANYA IMBALAN PADA DATA
+
+	upsampling pada kelas yang jumlahnya sedikit atau
+	downsampling pada kelas yang jumlahnya lebih banyak
+	atau smoothing
+-Memperkuat insting kita mana yang akan ditransformasi
+-PERIKSA KORELASI ANTAR ATRIBUT
+  chart.correlation
+  pairs.panels
+  corrgram
+	Atribut yang berkorelasi yang tinggi, salah atributnya dapat dibuang
+  Memeriksa korelasi linearnya (tidak wajib)
+-Pemeriksaan sebaran nilai data pada tiap atribut/variabel untuk tiap-tiap kelas
+-Membagi data untuk training set dan testing set
+-SVM akan menghasilkan hasil terbaik jika
+    mengguna RBF(Radial Basis Function) kernel
+-Tapi untuk kasus class IMBALANCE, maka
+    linear kernel akan menghasilkan hasil yang terbaik
+
+-Prediksi dan Evaluasi
+	  False Positif, kita prediksi positif, tapi sebenarnya sehat (ini berbahaya)
+	  False Negatif, kita prediksi negatif, tapi sebenarnya sakit (ini berbahaya)
+
+-Perbaikan Model dengan GridSearch
+    Rumit dalam memilih parameter model yang tepat
+
+-GridSearchCV - kombinasi kemudian lihat mana yang menghasilkan
+ hasil terbaik dari sisi AKURASI
+
+JIKA FALSE NEGATIF MENINGKAT, MAKA MODEL TIDAK AKAN KITA PILIH
+LEBIH KONSEN KE PRESISINYA, TIDAK CUKUP AKURASI DNA F1 SCORE
+ 
+SOLUSI
+ GRIDSEARCH BISA DIMODIFIKASI UNTUK PRESISI SAJA
+ PERBAIKAN PADA DATA DENGAN TRANSFORMASI ATAU NORMALISASI
+
+NEVER ENDING IMPROFMENT
