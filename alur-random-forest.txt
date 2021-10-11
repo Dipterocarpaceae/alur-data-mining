@@ -1,4 +1,6 @@
 RENCANA UNTUK METODE RANDOM FOREST
 -load library
 -load data
+-head
 -summary
+-ubah nama kolom (jika perlu)
