@@ -1,0 +1,4 @@
+RENCANA UNTUK METODE RANDOM FOREST
+-load library
+-load data
+-summary
