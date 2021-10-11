@@ -3,9 +3,8 @@ RENCANA UNTUK METODE RANDOM FOREST
 -load data
 -head
 -summary
--tail
--data.frame
+-str
 -ubah nama kolom (jika perlu)
 -cek missing
   NA atau kosong
-  dll
+ -ubah tipe data (jika perlu)
