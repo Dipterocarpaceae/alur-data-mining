@@ -4,3 +4,4 @@ RENCANA UNTUK METODE RANDOM FOREST
 -head
 -summary
 -ubah nama kolom (jika perlu)
+-cek missing
